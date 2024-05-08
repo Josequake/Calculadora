@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style4.css">
+    <link rel="stylesheet" href="/Calculadora/style/style4.css">
     <title>Calculadora</title>
 </head>
 <div class="div">
 
     <body>
         <header>
-            <center>CASIO</center>
+            <h1>CASIO</h1>
         </header>
         <h1 id="numbers"></h1>
         <h2>
-            <div>
-                <button><abbr title="TEXTO EMERGENTE">M/EX</abbr></button>
-                <button >M+</button>
+            <div id="centrar">
+               
+                
                 <button onclick=cincopor()><abbr
                         title="CON ESTE BOTON CALCULAS EL 5% DEL TOTAL EN PANTALLA">T5%</abbr></button>
                 <button onclick=diezpor()><abbr
@@ -28,7 +28,7 @@
                         title="CON ESTE BOTON CALCULAS EL IVA DEL TOTAL EN PANTALLA">IVA</abbr></button>
                 <button id="ac" class="colorencedido" onclick=encendido(0)><abbr
                     title="ENCENDER O INICIALIZAR EN 0">AC</abbr></button>
-                <button id="7" class="botoncolor" onclick=numeros(7)>7</button>
+                <button class="botoncolor" onclick=numeros(7)>7</button>
                 <button class="botoncolor" onclick=numeros(8)>8</button>
                 <button class="botoncolor" onclick=numeros(9)>9</button>
                 <button onclick="porcentaje('%')"><abbr
@@ -57,7 +57,7 @@
                 <button onclick="punto('.')"><abbr
                     title="DECIMAL">.</abbr></button>
                 <button class="posicionboton" onclick="igual('=')">=</button>
-                
+           
             </div>
             
                 

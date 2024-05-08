@@ -8,7 +8,7 @@ body{
     
 h2{
     text-decoration: underline;
-    font-size: 50px;
+    
     
 }
 h4{
@@ -35,6 +35,7 @@ h4{
 }
 .input-field{
     position: relative;
+    margin-bottom: -5%;
 }
 
 .input-field input[type="correo"]{
@@ -129,7 +130,7 @@ button{
     background-color: white;
     border-radius: 20px;
     width: 30%;
-    
+    margin-top: 20%;
 }
 
 button:hover{
@@ -137,4 +138,3 @@ button:hover{
     color: white;
     background-color: black;
 }
-

@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style2.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="/Calculadora/style/style2.css">
+    <title>Registro</title>
 </head>
 <body>
-    <div>
-    <center><h1>Eres nuevo registrate</h1></center>
-    <center><h2>ingresa tu nombre de usuario</h2></center>
-    <center><input type="text" placeholder="Usuario"></center>
-    <center><h2>ingresa tu correo</h2></center>
-    <center><input type="text" placeholder="Correo"></center>
-    <center><h2>ingresa una nueva contraseña</h2></center>
-    <center><input type="text" placeholder="Contraseña"></center>
-    </div>
-    <div>
-        <center><a href="" target=""><button>ingresar datos</button></a></center>
+    <div class="wrapper">
+        <h2>Eres nuevo <br> registrate!</h2>
+        <h4>Ingresa los siguientes datos</h4>
+        <form action="#">
+            <div class="input-field">
+                <input type="correo" id="usuario" placeholder="Usuario" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-field">
+                <input type="correo" id="email" placeholder="Correo" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-field">
+                <input type="password" id="contraseña" placeholder="Contraseña" required>
+            </div>
+            
+            <button type="ingresar" class="logueo">Registrarme</button>
+            
+        </form>
+
     </div>
 </body>
 </html>

@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="/Calculadora/style/style.css">
+    <title>Iniciar Sesion</title>
 </head>
 <body>
-    <div>
-    
-    <center><h1>Iniciar Sesion</h1></center>
-    <center><input type="text" placeholder="Correo"></center>
-    <center><input type="text" placeholder="Contraseña"></center>
-    </div>
-    <div class="div1">
-    <a href="http://127.0.0.1:5500/Registo.html" ><h4>Registrarme</h4></a>
-    <a href="http://127.0.0.1:5500/contra.html" ><h4>olvide contraseña</h4></a>
+    <div class="wrapper">
+        <h2>Bienvenido</h2>
+        <form action="#">
+            <div class="input-field">
+                <input type="correo" id="email" placeholder="Correo" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-field">
+                <input type="password" id="contraseña" placeholder="Contraseña" required>
+            </div>
+            <a href=http://127.0.0.1:5500/Calculadora/contra.html class="olvido">
+                <p>olvide contraseña</p>
+            </a>
+            <button type="ingresar" class="logueo">Ingresar</button>
+            <p class="registrarse">No tiene cuenta?<a href="http://127.0.0.1:5500/Calculadora/registo.html" class="registrarse">Registrarse</a></p>
+        </form>
+
     </div>
 </body>
 </html>
