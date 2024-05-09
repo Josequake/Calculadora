@@ -1,0 +1,70 @@
+header{
+    margin-left: 50%;
+}
+body{
+    align: left;
+    background: url(/Calculadora/imgs/fondo1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    
+}
+@font-face {
+    font-family: calculadora;
+    src: url("../fonts/Calculator.ttf");
+  }
+  
+h1{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    margin-left: 165%;
+    font-family: calculadora;
+    text-decoration: underline;
+}
+button{
+    
+    margin: 10px 10px 10px 10px;
+    border-radius: 30px;
+    width: 15%;
+    text-align: center;
+    cursor: pointer;
+}
+.botoncolor{
+    color: white;
+    background-color: black;
+}
+.colorencendido{
+    color: white;
+    background-color: orange;
+}
+h3{
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+}
+.centrar{
+
+    
+    position: relative;
+    left: 440px;
+    top: -65px;
+    
+}
+h2{
+    font-size: 50px;
+    text-align: right;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-family: calculadora;
+    position: relative;
+    left: 415px;
+    top: -45px;
+    padding-bottom: 5px;
+    
+}
+.posicionboton{
+    font-size: 18px;
+}

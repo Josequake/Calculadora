@@ -4,69 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Calculadora/style/style4.css">
+    <link rel="stylesheet" href="/Calculadora/style/calculadora.css">
     <title>Calculadora</title>
 </head>
-<div class="div">
 
-    <body>
-        <header>
-            <h1>CASIO</h1>
-        </header>
-        <h1 id="numbers"></h1>
-        <h2>
-            <div id="centrar">
-               
-                
-                <button onclick=cincopor()><abbr
-                        title="CON ESTE BOTON CALCULAS EL 5% DEL TOTAL EN PANTALLA">T5%</abbr></button>
-                <button onclick=diezpor()><abbr
-                        title="CON ESTE BOTON CALCULAS EL 10% DEL TOTAL EN PANTALLA">T10%</abbr></button>
-                <button onclick=veinticincopor()><abbr
-                        title="CON ESTE BOTON CALCULAS EL 25% DEL TOTAL EN PANTALLA">T25%</abbr></button>
-                <button onclick=iva()><abbr
-                        title="CON ESTE BOTON CALCULAS EL IVA DEL TOTAL EN PANTALLA">IVA</abbr></button>
-                <button id="ac" class="colorencedido" onclick=encendido(0)><abbr
-                    title="ENCENDER O INICIALIZAR EN 0">AC</abbr></button>
-                <button class="botoncolor" onclick=numeros(7)>7</button>
-                <button class="botoncolor" onclick=numeros(8)>8</button>
-                <button class="botoncolor" onclick=numeros(9)>9</button>
-                <button onclick="porcentaje('%')"><abbr
-                    title="PORCENTAJE">%</abbr></button>
-                <button onclick="raiz('√')"><abbr
-                    title="RAIZ">√</abbr></button>
-                <button>+/-</button>
-                <button class="botoncolor" onclick=numeros(4)>4</button>
-                <button class="botoncolor" onclick=numeros(5)>5</button>
-                <button class="botoncolor" onclick=numeros(6)>6</button>
-                <button onclick="multiplicacion('*')"><abbr
-                    title="MULTIPLCACION">X</abbr></button>
-                <button onclick="division('/')"><abbr
-                    title="DIVISION">/</abbr></button>
-                <button>></button>
-                <button class="botoncolor" onclick=numeros(1)>1</button>
-                <button class="botoncolor" onclick=numeros(2)>2</button>
-                <button class="botoncolor" onclick=numeros(3)>3</button>
-                <button onclick="suma('+')"><abbr
-                    title="SUMA">+</abbr></button>
-                <button onclick="resta('-')" class="botonmenos" ><abbr
-                    title="RESTA">-</abbr></button>
-                <button>C</button>
-                <button class="botoncolor" onclick=numeros(0)>0</button>
-                <button class="botoncolor" onclick=numeros(0)>00</button>
-                <button onclick="punto('.')"><abbr
-                    title="DECIMAL">.</abbr></button>
-                <button class="posicionboton" onclick="igual('=')">=</button>
-           
-            </div>
-            
-                
-            
 
-        </h2>
+<body>
+    <header>
+        <h1>
+            <center>CASIO</center>
+        </h1>
+    </header>
+    <h2 id="numbers"></h2>
+    <div class="centrar">
+    <h3>
         
-        <script src="../scr/js4.js"></script>
-    </body>
-</div>
+        <button onclick=cincopor()><abbr
+                    title="CON ESTE BOTON CALCULAS EL 5% DEL TOTAL EN PANTALLA">T5%</abbr></button>
+        <button onclick=diezpor()><abbr
+                    title="CON ESTE BOTON CALCULAS EL 10% DEL TOTAL EN PANTALLA">T10%</abbr></button>
+        <button onclick=veinticincopor()><abbr
+                    title="CON ESTE BOTON CALCULAS EL 25% DEL TOTAL EN PANTALLA">T25%</abbr></button>
+        <button onclick=iva()><abbr title="CON ESTE BOTON CALCULAS EL IVA DEL TOTAL EN PANTALLA">IVA</abbr></button>
+        <button id="ac" class="colorencendido" onclick=encendido(0)><abbr
+                    title="ENCENDER O INICIALIZAR EN 0">AC</abbr></button>
+        <button onclick="porcentaje('%')"><abbr title="PORCENTAJE">%</abbr></button>
+        <button onclick="raiz('√')"><abbr title="RAIZ">√</abbr></button>
+        <button>+/-</button>
+        <button onclick="division('/')"><abbr title="DIVISION">/</abbr></button>
+        <button class="botoncolor" onclick=numeros(7)>7</button>
+        <button class="botoncolor" onclick=numeros(8)>8</button>
+        <button class="botoncolor" onclick=numeros(9)>9</button>
+        <button onclick="multiplicacion('*')"><abbr title="MULTIPLCACION">X</abbr></button>
+        <button class="botoncolor" onclick=numeros(4)>4</button>
+        <button class="botoncolor" onclick=numeros(5)>5</button>
+        <button class="botoncolor" onclick=numeros(6)>6</button>
+        <button onclick="suma('+')"><abbr title="SUMA">+</abbr></button>
+        <button class="botoncolor" onclick=numeros(1)>1</button>
+        <button class="botoncolor" onclick=numeros(2)>2</button>
+        <button class="botoncolor" onclick=numeros(3)>3</button>
+        <button onclick="resta('-')" class="botonmenos"><abbr title="RESTA">-</abbr></button>
+        <button class="botoncolor" onclick=numeros(0)>0</button>
+        <button class="botoncolor" onclick="numeros('00')">00</button>
+        <button onclick="punto('.')"><abbr title="DECIMAL">.</abbr></button>
+        <button class="posicionboton" onclick="igual('=')"><abbr title="IGUAL">=</abbr></button>
+        <button>></button>
+        <button><abbr title="Clear" onclick=clear()>C</abbr></button>
+        
+
+      
+
+
+
+
+    </h3>
+    </div>
+    <script src="./scr/calculadora.js"></script>
+</body>
+
+
 
 </html>
