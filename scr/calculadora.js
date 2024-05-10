@@ -1,12 +1,24 @@
 let numbers = document.getElementById("numbers");
 let ac = document.getElementById("")
+let oculto = document.getElementById("oculto")
+let flag
+
+
 
 function numeros(num) {
-    numbers.innerHTML = numbers.innerHTML + num 
+    if (oculto.value == 0) {
+        numbers.innerHTML = num;
+        oculto.value = "1";
+    } else {
+        numbers.innerHTML = numbers.innerHTML + num
+        
+    }
+     
 }
 
-function encendido(num) {
-    numbers.innerHTML =  "" 
+function encendido() {
+    oculto.value = 0
+   
 }
 function suma(simbolo) {
     numbers.innerHTML = numbers.innerHTML + simbolo 
