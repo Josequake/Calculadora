@@ -1,56 +1,26 @@
+@font-face {
+    font-family: calculadora;
+    src: url("../fonts/Calculator.ttf");
+}
 header{
-    margin-left: 50%;
+    margin-left: 10px;
 }
 body{
-    align: left;
+    
     background: url(/Calculadora/imgs/fondo1.png) no-repeat;
     background-position: center;
     background-size: cover;
     width: 400px;
     height: 600px;
-    
 }
-@font-face {
-    font-family: calculadora;
-    src: url("../fonts/Calculator.ttf");
-  }
-  
+
 h1{
     font-size: 80px;
     color: white;
     text-align: center;
-    margin-left: 165%;
     font-family: calculadora;
     text-decoration: underline;
-}
-button{
-    
-    margin: 10px 10px 10px 10px;
-    border-radius: 30px;
-    width: 15%;
-    text-align: center;
-    cursor: pointer;
-}
-.botoncolor{
-    color: white;
-    background-color: black;
-}
-.colorencendido{
-    color: white;
-    background-color: orange;
-}
-h3{
-    align-items: center;
-    padding: 20px;
-    margin: 5px;
-}
-.centrar{
-
-    
-    position: relative;
-    left: 440px;
-    top: -65px;
-    
+    margin-top: auto;
 }
 h2{
     font-size: 50px;
@@ -60,11 +30,53 @@ h2{
     color: black;
     font-family: calculadora;
     position: relative;
-    left: 415px;
+    left: 5px;
     top: -45px;
     padding-bottom: 5px;
     
 }
+
+.botoncolor{
+    color: white;
+    background-color: black;
+}
+.colorencendido{
+    color: white;
+    background-color: orange;
+}
+
+.centrar{
+
+    
+    position: relative;
+    left: 5px;
+    top: -65px;
+    
+}
+button{
+    text-align: center;
+    border-radius: 20px;
+    width: 20%;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
 .posicionboton{
     font-size: 18px;
+    
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    border: 1px solid rgb(241,241,241);
+    border-radius: 12px;
+    padding: 10px 20px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
 }

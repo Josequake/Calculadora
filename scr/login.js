@@ -18,8 +18,10 @@ function ingresar() {
     if (flag) {
         alert("Ingresado con exito")
         window.location.href = "calculadora.html" 
+    }else if(correo.value == "" || contraseña.value == ""){
+        alert("No dejar espacios en blanco");
     }else{
-        alert("No encontrado. Correo o contraseña incorrecto");
+        alert("Correo o Contraseña incorrecto")
     }
 
 }

@@ -6,7 +6,7 @@ let flag
 
 
 function numeros(num) {
-    if (oculto.value == 0) {
+    if (numbers.innerHTML == 0) {
         numbers.innerHTML = num;
         oculto.value = "1";
     } else {
@@ -16,8 +16,8 @@ function numeros(num) {
      
 }
 
-function encendido() {
-    oculto.value = 0
+function encendido(num) {
+    numbers.innerHTML = num
    
 }
 function suma(simbolo) {
@@ -68,7 +68,7 @@ function iva() {
     
 }
 
-/*function clear() {
-    let result = numbers.innerHTML 
-    result = text.substring(text.length - 1);  
-}*/
+function clear() {
+    
+    numbers.innerHTML = numb.subint(numb.length - 1);  
+}

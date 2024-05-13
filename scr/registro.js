@@ -5,8 +5,11 @@ let contraseña = document.getElementById("contraseña");
 let registros = [];
 
 function registrar() {
+    //bandera para saber si esta o no ya registrado
+    let flag;
     registros = JSON.parse(localStorage.getItem("Registros")) || [];
     if (usuario.value != "" && correo.value != "" && contraseña.value != "") {
+   
         data = {
             username: usuario.value,
             email: correo.value,
@@ -19,25 +22,30 @@ function registrar() {
             alert("Registrado con exito")
             window.location.href = "login.html"
         }else{
-        for (let registros = 1; registros < registros.length; registros++) {
-            if (correo.value == registros[registros].email) {
-                alert("el correo ingresado ya se encuentra registrado")
+            
+
+        for (let index = 0; index < registros.length; index++) {
+            if (correo.value == registros[index].email) {
+                flag = true;
                 break
             } else {
-                registros = JSON.parse(localStorage.getItem("Registros")) || [];
-                registros.push(data)
-                localStorage.setItem("Registros", JSON.stringify(registros))
-                alert("Registrado con exito")
-                break
-                
-                
+                     
+                flag = false;
                 
             }   
-        } window.location.href = "login.html"
+        }
+        if (flag) {
+            alert("el correo ingresado ya se encuentra registrado")
+        } else {
+            registros = JSON.parse(localStorage.getItem("Registros")) || [];
+            registros.push(data)
+            localStorage.setItem("Registros", JSON.stringify(registros))
+            alert("Registrado con exito")
+            window.location.href = "login.html"      
+        } 
+
+
 
         }
     }
 }
-
-
-
